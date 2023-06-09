@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="UTF-8" />
-		<script src="script.js"></script>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
-		<title>Dicas de Reciclagem</title>
-	</head>
-	<body>
-		<nav id="top-menu">
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="dicas.html">Dicas de Reciclagem</a></li>
-					<li><a href="horarios.html">Horários de Coleta</a></li>
-				</ul>
-			</div>
-			<a id="logo" href="index.html"
-				><img src="img/logo1.png" alt="LOGO"
-			/></a>
 
-			<div id="menu-icon" onclick="toggleMenu()">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-		<a id="btnVoltar" href="index.html"
-			><img width="100px" src="img/voltar.png" alt="VOLTAR"
-		/></a>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
+	<title>Dicas de Reciclagem</title>
+</head>
+
+<body>
+	<nav id="top-menu">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="dicas.html">Dicas de Reciclagem</a></li>
+				<li><a href="horarios.html">Horários de Coleta</a></li>
+			</ul>
+		</div>
+		<a id="logo" href="index.html"><img src="img/logo1.png" alt="LOGO" /></a>
+
+		<div id="menu-icon" onclick="toggleMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<section id="content">
+		<div class="buscar">
+			<input id="inputBuscar" type="text" onkeyup="search()" />
+			<img id="inputIcon" src="img/search-icon.png" alt="buscar" />
+		</div>
+		<ul id="lista">
+			<li>Jardim Panorama</li>
+			<li>Centro</li>
+			<li>Jardim Bela Vista</li>
+			<li>Jardim Cristo Rei</li>
+		</ul>
+	</section>
+	<a id="btnVoltar" href="index.html"><img width="100px" src="img/voltar.png" alt="VOLTAR" /></a>
+</body>
+
 </html>
