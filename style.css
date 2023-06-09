@@ -83,11 +83,7 @@ body {
 }
 
 #btnVoltar {
-	background-image: url("img/voltar.png");
-	background-size: contain;
 	position: fixed;
-	width: 100px;
-	height: 100px;
 	margin: 20px;
 	bottom: 0;
 }
