@@ -5,11 +5,12 @@
 	<meta charset="UTF-8" />
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style-dicas.css">
 	<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
 	<title>Dicas de Reciclagem</title>
 </head>
 
-<body>
+<body onload="loadList()">
 	<nav id="top-menu">
 		<div id="menu">
 			<ul>
@@ -26,17 +27,40 @@
 			<span></span>
 		</div>
 	</nav>
-	<section id="content">
-		<div class="buscar">
-			<input id="inputBuscar" type="text" onkeyup="search()" />
-			<img id="inputIcon" src="img/search-icon.png" alt="buscar" />
+	<section class="container-dicas">
+		<div class="filtro">
+			<form id="filterForm">
+				<span>
+					<input type="checkbox" name="filter" value="plastico" onchange="filterResults()">
+					Plástico
+				</span>
+
+				<span>
+					<input type="checkbox" name="filter" value="metal" onchange="filterResults()">
+					Metal
+				</span>
+
+				<span>
+					<input type="checkbox" name="filter" value="papel" onchange="filterResults()">
+					Papel
+				</span>
+
+				<span>
+					<input type="checkbox" name="filter" value="vidro" onchange="filterResults()">
+					Vidro
+				</span>
+
+				<span>
+					<input type="checkbox" name="filter" value="organico" onchange="filterResults()">
+					Orgânico
+				</span>
+
+				<div>
+					<button type="button" onclick="resetFilters()">Resetar Filtros</button>
+				</div>
+			</form>
 		</div>
-		<ul id="lista">
-			<li>Jardim Panorama</li>
-			<li>Centro</li>
-			<li>Jardim Bela Vista</li>
-			<li>Jardim Cristo Rei</li>
-		</ul>
+		<div id="lista"></div>
 	</section>
 	<a id="btnVoltar" href="index.html"><img width="100px" src="img/voltar.png" alt="VOLTAR" /></a>
 </body>

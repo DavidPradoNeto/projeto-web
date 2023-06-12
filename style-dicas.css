@@ -1,0 +1,72 @@
+#metal-list {
+	background-color: #a9a9a9;
+}
+#plastico-list {
+	background-color: #0099cc;
+}
+#papel-list {
+	background-color: #ffcc00;
+}
+#vidro-list {
+	background-color: #66cc66;
+}
+#organico-list {
+	background-color: #ff3333;
+}
+
+.container-dicas {
+	display: flex;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 100px;
+	padding: 50px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+#filterForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+}
+
+.filtro {
+	padding: 50px;
+	left: 10%;
+	border-right: 1px solid black;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	margin-bottom: 2px;
+}
+
+span {
+	color: white;
+}
+
+.removeDica {
+	color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 10px;
+}
+
+.removeDica:hover {
+	cursor: pointer;
+}
+
+.removeDica::selection {
+	background-color: #00000000;
+}
