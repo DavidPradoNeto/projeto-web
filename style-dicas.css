@@ -24,6 +24,19 @@
 	border: 1px solid black;
 }
 
+.legenda {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.legenda div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 25px;
+}
+
 #filterForm {
 	display: flex;
 	flex-direction: column;

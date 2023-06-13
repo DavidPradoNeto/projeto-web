@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="UTF-8" />
-		<script src="script.js"></script>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
-		<title>Horarios de Coleta</title>
-	</head>
-	<body>
-		<nav id="top-menu">
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="dicas.html">Dicas de Reciclagem</a></li>
-					<li><a href="horarios.html">Horários de Coleta</a></li>
-				</ul>
-			</div>
-			<a id="logo" href="index.html"
-				><img src="img/logo1.png" alt="LOGO"
-			/></a>
 
-			<div id="menu-icon" onclick="toggleMenu()">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-		<a id="btnVoltar" href="index.html"
-			><img width="100px" src="img/voltar.png" alt="VOLTAR"
-		/></a>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
+	<title>Horarios de Coleta</title>
+	<style>
+		.table {
+			display: flex;
+			padding: 5px;
+			text-align: center;
+		}
+
+		.tableItem {
+			min-width: 200px;
+			border: 1px solid black;
+		}
+
+		li {
+			list-style-type: none;
+			margin: 10px;
+		}
+
+		h3 {
+			border-bottom: 1px solid black;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			margin: 100px auto;
+			border: 1px solid black;
+			padding: 0;
+		}
+	</style>
+
+</head>
+
+<body onload="carregaTabelas()">
+
+	<nav id="top-menu">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="dicas.html">Dicas de Reciclagem</a></li>
+				<li><a href="horarios.html">Horários de Coleta</a></li>
+			</ul>
+		</div>
+		<a id="logo" href="index.html"><img src="img/logo1.png" alt="LOGO" /></a>
+
+		<div id="menu-icon" onclick="toggleMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<section>
+		<div class="tabela">
+			<div id="titleTurno1" class="title"></div>
+			<div id="tableTurno1" class="table"></div>
+		</div>
+		<div class="tabela">
+			<div id="titleTurno2" class="title"></div>
+			<div id="tableTurno2" class="table"></div>
+		</div>
+		<div class="tabela">
+			<div id="titleReciclagem" class="title"></div>
+			<div id="tableReciclagem" class="table"></div>
+		</div>
+	</section>
+	<a id="btnVoltar" href="index.html"><img width="100px" src="img/voltar.png" alt="VOLTAR" /></a>
+</body>
+
 </html>
