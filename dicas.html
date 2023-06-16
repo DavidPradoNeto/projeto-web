@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<script src="script.js"></script>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="style-dicas.css">
+	<script src="scripts/script.js"></script>
+	<script src="scripts/dicas.js"></script>
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/dicas.css">
 	<link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon" />
 	<title>Dicas de Reciclagem</title>
 </head>
@@ -29,6 +30,30 @@
 	</nav>
 	<section class="container-dicas">
 		<div class="filtro">
+			<div id="btnAddDica" onclick="showModalAddDica()">Adicionar Dica</div>
+			<div id="modalAddDica" class="modal">
+				<div class="modal-content">
+					<span class="close" onclick="showModalAddDica(), clearForm()">&times;</span>
+					<h3>Preencha o formulário</h3>
+					<form>
+						<label for="materialSelector">Selecione o Material<span id="validaSelector">Selecione um tipo de
+								material</span></label>
+						<select id="materialSelector" name="materialSelector" required>
+							<option value="">Selecione uma opção</option>
+							<option value="plastico">Plástico</option>
+							<option value="metal">Metal</option>
+							<option value="papel">Papel</option>
+							<option value="vidro">Vidro</option>
+							<option value="organico">Orgânico</option>
+						</select>
+
+						<label for="dica">Dica de Reciclagem:<span id="validaText">Digite a dica</span></label>
+						<textarea id="dica" name="dica" required maxlength="1000"></textarea>
+
+						<div id="btnSubmitModal" onclick="addDica()">Enviar</div>
+					</form>
+				</div>
+			</div>
 			<form id="filterForm">
 				<span>
 					<input type="checkbox" name="filter" value="plastico" onchange="filterResults()">
@@ -60,11 +85,11 @@
 				</div>
 			</form>
 			<div class="legenda">
-				<div id="plastico-list">Plástico</div>
-				<div id="metal-list">Metal</div>
-				<div id="papel-list">Papel</div>
-				<div id="vidro-list">Vidro</div>
-				<div id="organico-list">Organico</div>
+				<div class="plastico-list">Plástico</div>
+				<div class="metal-list">Metal</div>
+				<div class="papel-list">Papel</div>
+				<div class="vidro-list">Vidro</div>
+				<div class="organico-list">Organico</div>
 			</div>
 		</div>
 		<div id="lista"></div>

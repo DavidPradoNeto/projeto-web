@@ -1,0 +1,196 @@
+.metal-list {
+	background-color: #a9a9a9;
+}
+.plastico-list {
+	background-color: #0099cc;
+}
+.papel-list {
+	background-color: #ffcc00;
+}
+.vidro-list {
+	background-color: #66cc66;
+}
+.organico-list {
+	background-color: #ff3333;
+}
+
+.metal-border {
+	border-color: #a9a9a9;
+}
+.plastico-border {
+	border-color: #0099cc;
+}
+.papel-border {
+	border-color: #ffcc00;
+}
+.vidro-border {
+	border-color: #66cc66;
+}
+.organico-border {
+	border-color: #ff3333;
+}
+
+.container-dicas {
+	display: flex;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 100px;
+	padding: 50px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.legenda {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.legenda div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 25px;
+}
+
+#filterForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+}
+
+.filtro {
+	padding: 50px;
+	left: 10%;
+	border-right: 1px solid black;
+}
+
+#lista {
+	width: 100%;
+}
+ul {
+	list-style: none;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	margin-bottom: 2px;
+}
+
+span {
+	color: white;
+}
+
+.removeDica {
+	color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 10px;
+}
+
+.removeDica:hover {
+	cursor: pointer;
+}
+
+.removeDica::selection {
+	background-color: #00000000;
+}
+
+#btnAddDica {
+	display: flex;
+	width: 140px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin-bottom: 25px;
+	background-color: #ffffff90;
+	align-items: center;
+	justify-content: center;
+}
+
+#btnAddDica:hover {
+	transform: scale(105%);
+	cursor: pointer;
+}
+
+/* Estilos para o modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.visible {
+	display: block;
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 10% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 15px;
+	width: 80%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+/* Estilos para o formulário */
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+#btnSubmitModal {
+	background-color: #4caf50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#btnSubmitModal:hover {
+	background-color: #45a049;
+}
+#validaSelector {
+	margin-left: 20px;
+}
+.validaFormText {
+	color: red;
+	font-size: 10px;
+}
+
+#validaText {
+	margin-left: 20px;
+}
