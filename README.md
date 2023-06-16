@@ -4,4 +4,7 @@ Essa página terá como objetivo conscientizar os cidadãos sobre a importância
 seletiva, fornecendo informações que possam auxiliá-los, tais como: horários de coleta,
 estatísticas de reciclagem e dicas de ações sustentáveis.
 
-PARA CARREGAR UMA LISTA DE DICAS PRÉ DEFINIDA USE O COMANDO: preLista() NO CONSOLE
+PARA CARREGAR UMA LISTA DE DICAS PRÉ DEFINIDA USE O SEGUINTE COMANDO NO CONSOLE:
+``` JavaScript
+ preLista()
+```
